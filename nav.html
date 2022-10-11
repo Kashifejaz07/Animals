@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    
+  overflow: hidden;
+      background: rgb(78 54 49 / 78%);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+
+<style>
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+  }
+    ul li a{
+        display: inline-block;
+        padding: 14px 15px;
+        color: #333;
+        text-decoration: none;
+        
+        
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul.mydropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        display: none;
+        left: 0;
+    }
+    ul li:hover ul.mydropdown{
+        display: inline-block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+</style>
+
+</head>
+<body>
+    
+<div class="topnav" id="myTopnav">
+    
+    <p><h1 style="font-family:playfair ; color:orange; font-size:67px ; font-weight:bolder;   margin-left: 12px; ">Jabal Farm</h1></p>
+   <?php 
+include ("search.php");
+?>
+    <!--<div class="input-group" style="padding-right: 424px;
+    padding-left: 400px; margin-top: -4rem;
+    margin-bottom: auto;">
+  <input type="search" class="form-control rounded" placeholder="Search Animals" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">Searchaaaaaaaa</button>
+</div>-->
+     
+   <a href="View_detail.php">HERD</a>
+   <!--<a href="animal_registration.php">PROFILE</a>
+  
+    <a href="weight.php">WEIGHT</a>
+    <a href="image.php">IMAGE</a>-->
+    
+        <ul style="width:60px; float:left; margin-right:33px;">
+      <li style="width:290px;">
+  <a href="expense_tab.php">EXPENSE</a>
+ </li>
+
+</ul>
+      
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+          <ul style="width:60px; float:left;">
+      <li style="width:290px;">
+    <a href="add_costs.php">COST</a>
+ </li>
+</ul>
+
+   <ul style="width:60px; float:left;">
+               <li style="width:290px;">
+            <a href="#">SALE</a>
+            <ul class="mydropdown" style="margin-left:-45px;">
+                 <li><a href="milk.php">Milks</a></li>
+                <li><a href="animal.php">Animals</a></li>
+            </ul>
+        </li>
+
+      </ul>
+       
+      <ul style="width:120px; float:left;">
+        <li style="width:290px;">
+            <a href="index.php">REGISTAR</a>
+          <a href="View_Total.php">REPORT</a>
+     
+   </li>
+  
+  </ul>
+        
+
+    <ul style="width:100px; float:left; margin-left: 80px;">
+      <li style="width:70px;">
+        <a href="examples/dashboard.php">DASHBOARD</a>
+   
+ </li>
+
+</ul>
+
+<ul style="width:300px; float:right;">
+      <li style="width:300px;">
+        <a href="add_animals.php">(Add Animals +)</a>
+   
+ </li>
+
+</ul>
+    
+        <ul>
+               <li style="width:290px;  padding-left: 1.5rem;">
+            <a href="feed_in.php">FEED</a>
+            <!--<ul class="mydropdown" style="margin-left:-50px;">
+                 <li><a href="feed_in.php">Feed In</a></li>
+                <li><a href="feed_out.php">Feed Out</a></li>
+            </ul>-->
+        </li>
+    </ul>  
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+

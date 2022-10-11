@@ -1,0 +1,42 @@
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  include(nav.html): failed to open stream: No such file or directory in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 2
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  include(nav.html): failed to open stream: No such file or directory in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 2
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  include(): Failed opening 'nav.html' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 2
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 3
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 3
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 3
+[15-Apr-2019 08:58:20 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 4
+[15-Apr-2019 08:58:20 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 08:58:20 UTC] PHP Notice:  Undefined variable: con in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 347
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 347
+[15-Apr-2019 08:58:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 349
+[15-Apr-2019 09:00:05 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 4
+[15-Apr-2019 09:00:05 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:00:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:03:20 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 4
+[15-Apr-2019 09:03:20 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:03:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:03:41 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 4
+[15-Apr-2019 09:03:41 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:03:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:07:27 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 4
+[15-Apr-2019 09:07:27 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:07:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_all.php on line 313
+[15-Apr-2019 09:08:31 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_fattening.php on line 4
+[15-Apr-2019 09:08:31 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_fattening.php on line 313
+[15-Apr-2019 09:08:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_fattening.php on line 313
+[15-Apr-2019 09:08:32 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_breeding.php on line 4
+[15-Apr-2019 09:08:32 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_breeding.php on line 313
+[15-Apr-2019 09:08:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_breeding.php on line 313
+[15-Apr-2019 09:08:33 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_milking.php on line 4
+[15-Apr-2019 09:08:33 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_milking.php on line 313
+[15-Apr-2019 09:08:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_milking.php on line 313
+[15-Apr-2019 09:10:04 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_fattening.php on line 4
+[15-Apr-2019 09:10:04 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_fattening.php on line 313
+[15-Apr-2019 09:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_fattening.php on line 313
+[15-Apr-2019 09:10:41 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_breeding.php on line 4
+[15-Apr-2019 09:10:41 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_breeding.php on line 313
+[15-Apr-2019 09:10:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_breeding.php on line 313
+[15-Apr-2019 09:10:43 UTC] PHP Notice:  Undefined index: Animal in /home/nbfcompk/public_html/Bakra/goat/View_milking.php on line 4
+[15-Apr-2019 09:10:43 UTC] PHP Notice:  Undefined variable: query1 in /home/nbfcompk/public_html/Bakra/goat/View_milking.php on line 313
+[15-Apr-2019 09:10:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/nbfcompk/public_html/Bakra/goat/View_milking.php on line 313

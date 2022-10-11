@@ -1,0 +1,281 @@
+<?php 
+include ("nav.html");
+include ("connection.php");
+
+
+if(isset($_POST['submit'])){
+
+$id = $_POST['id'];
+$Animal = $_POST['Animal'];
+$Breed = $_POST['Breed'];
+$Weight = $_POST['Weight'];
+$Height = $_POST['Height'];
+$Age = $_POST['Age'];
+$HealthStatus = $_POST['HealthStatus'];
+$Purpose = $_POST['Purpose'];
+$Category= $_POST['Category'];
+$PurchaseP = $_POST['PurchaseP'];
+$InwardFare = $_POST['InwardFare'];
+$Pdate=$_POST['Pdate'];
+$Purchaseagent = $_POST['agent'];
+$PurchaseL = $_POST['Plocation'];
+$cagent=$_POST['AgentCommission'];
+$IsolationP=$_POST['P1date'];
+$other=$_POST['other'];
+$upload="";
+
+
+
+
+if(isset($_FILES['image']) ) 
+              {
+                 $upload=$_FILES['image']['name'];
+                 move_uploaded_file($_FILES['image']['tmp_name'],"upload/".$upload); 
+                  }
+       $query=("INSERT INTO `soft`(`id`, `Animal`, `Image`, `Breed`, `Weight`, `Height`, `Age`, `HealthStatus`, `Purpose`, `Category`, `PurchaseP`, `inwardfare`, `purchaseagent`, `purchaselocation`, `purchasedate`, `issolationperiod`, `agentcommission`, `other`, `vaccination`, `Due`)
+VALUES('$id','$Animal','$upload','$Breed','$Weight','$Height','$Age','$HealthStatus','$Purpose','$Category','$PurchaseP','$InwardFare','$Purchaseagent','$PurchaseL','$Pdate','$IsolationP','$cagent','$other','','')");
+
+$result=mysqli_query($con,$query);
+
+if($result){
+echo "<script>alert('done');</script>";
+}
+else{
+echo "<script>alert('done not');</script>";
+} 
+
+    }
+
+
+
+
+?>
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Home</title>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="OP Registration Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"
+	/>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tags -->
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+	<!-- //Stylesheet -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+	<!--//fonts-->
+</head>
+
+<body>
+
+	<!--background-->
+	<h3 class="sub-heading-agileits" ">LIVE STOCK</h3>
+	<div id="content">
+			 <div class="content-1">
+	<div class="register-form-w3layouts">
+		<!-- Form starts here -->
+		<form action="#" method="post"  enctype="multipart/form-data">
+			<h3 class="sub-heading-agileits">PURCHASE</h3>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input class="field" name="id"  type="text" placeholder="Serial #" />
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<select class="form-control" name="Animal">
+					 	<option>Select Animal</option>
+					 	<option>Goat</option>
+					 	<option>Cow</option>
+					 	<option>sheep</option>
+					 </select>
+				</div>
+					<div class="field-agileinfo-spc form-w3-agile-text1">
+					  <input type="file" name="image" id="image" class="form-control"/>  
+					  
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input class="field" name="Breed" required="required" type="text" placeholder="Breed" />
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<select class="form-control" name="HealthStatus">
+					 	<option>Select Your Health Status</option>
+					 	<option>Normal</option>
+					 </select>
+					
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input class="field" name="Age" required="required" type="number" placeholder="Age" />
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input class="field" name="Weight" required="required" type="number" placeholder="Weight" />
+				</div>
+					<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input class="field" name="Height" required="required" type="number" placeholder="Height" />
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<select class="form-control" name="Category">
+					 	<option> Select Category</option>
+					 	<option>#</option>
+					 	<option>#</option>
+					 </select>
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<select class="form-control" name="Purpose">
+					 	<option>Select Your Purpose</option>
+					 	<option>#</option>
+					 	<option>#</option>
+					 </select>
+				</div>
+			</div>
+		
+			
+			
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input class="field" name="InwardFare" required="required" type="text" placeholder="Inward Fare" />
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					 <input class="field" name="PurchaseP" required="required" type="text" placeholder="Purchase Price" />
+				   
+				</div>
+					<div class="field-agileinfo-spc form-w3-agile-text2">
+					<select class="form-control" name="Plocation">
+					 	<option>Purchase Location</option>
+					 	<option>gulsan-e-iqbal</option>
+					 	<option>Saddar</option>
+					 </select>
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+				<label>Purchase Date</label>
+					<input type="date" name= "Pdate" class="form-control">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+				<label>Isolation Date</label>
+					<input type="date" name= "P1date">
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<select class="form-control" name="agent">
+					 	<option>Select Agent</option>
+					 	<option>Abdul Walid</option>
+					 	<option>Kashif</option>
+					 </select>
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+				<select  class="form-control" name="AgentCommission">
+					 	<option>Agent Commission</option>
+					 	<option>100</option>
+					 	<option>200</option>
+					 </select>
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+			
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<select class="form-control" name="other">
+					 	<option>Other</option>
+					 	<option>#</option>
+					 	<option>#</option>
+					 </select>
+				</div>
+			</div>
+				<div class="main-flex-w3ls-sectns">
+			
+				
+			</div>
+			
+		
+			<input type="submit" value="Submit" name="submit" />
+			
+			<div class="clear"></div>
+		</form>
+		<!--// Form starts here -->
+
+
+	</div>
+</div>
+</div>
+	<!--copyright-->
+	
+	<!--//copyright-->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!-- Calendar Js -->
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+		});
+	</script>
+	<!-- //Calendar Js -->
+
+ 
+  <table class="table table-bordered">  
+                     
+                <?php  
+                $query = "SELECT * FROM soft";  
+                $result = mysqli_query($connect, $query);  
+                while($row = mysqli_fetch_array($result))  
+                {  
+                     echo '  
+                          <tr>  
+                               <td>  
+                                    <img src="upload/'.($row['image'] ).'" height="200" width="200" class="img-thumnail" />  
+                                    <embed src="upload/'.($row['image'] ).'" height="200" width="200" class="img-thumnail" />
+                                    
+                               </td>  
+                          </tr>  
+                     ';  
+                }  
+                ?>  
+                </table>  
+ 
+ 
+
+</body>
+
+</html>
+<script>  
+ $(document).ready(function(){  
+      $('#insert').click(function(){  
+           var image_name = $('#image').val();  
+           if(image_name == '')  
+           {  
+                alert("Please Select Image");  
+                return false;  
+           }  
+           else  
+           {  
+                var extension = $('#image').val().split('.').pop().toLowerCase();  
+                if(jQuery.inArray(extension, ['gif','png','jpg','jpeg','wmv','mp4']) == -1)  
+                {  
+                     alert('Invalid Image File');  
+                     $('#image').val('');  
+                     return false;  
+                }  
+           }  
+      });  
+ });  
+ </script>  
